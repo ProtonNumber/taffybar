@@ -27,4 +27,4 @@ textCpuMonitorNew fmt period = do
       return $ ST.render template'
 
 formatPercent :: Double -> String
-formatPercent = printf "%.2f"
+formatPercent = printf "%2.0f"
