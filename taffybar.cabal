@@ -21,6 +21,10 @@ extra-source-files:
   dbus-xml/org.mpris.MediaPlayer2.Player.xml
   dbus-xml/org.mpris.MediaPlayer2.xml
 
+flag cryptocurrency
+    description: Enable crypto assets widget.
+    default: True
+
 library
   default-extensions:
     TupleSections
@@ -38,7 +42,6 @@ library
                , bytestring
                , conduit
                , containers
-               , coinbase-pro >= 0.9.2.2 && < 1.0.0.0
                , data-default
                , dbus >= 1.2.11 && < 2.0.0
                , dbus-hslogger >= 0.1.0.1 && < 0.2.0.0
@@ -149,9 +152,9 @@ library
                  , System.Taffybar.Widget.Text.NetworkMonitor
                  , System.Taffybar.Widget.Util
                  , System.Taffybar.Widget.Weather
-                 , System.Taffybar.Widget.WttrIn
                  , System.Taffybar.Widget.Windows
                  , System.Taffybar.Widget.Workspaces
+                 , System.Taffybar.Widget.WttrIn
                  , System.Taffybar.Widget.XDGMenu.Menu
                  , System.Taffybar.Widget.XDGMenu.MenuWidget
                  , System.Taffybar.WindowIcon
