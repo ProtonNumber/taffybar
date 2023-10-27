@@ -1,5 +1,5 @@
 name: taffybar
-version: 3.3.0
+version: 4.0.1
 synopsis: A desktop bar similar to xmobar, but with more GUI
 license: BSD3
 license-file: LICENSE
@@ -20,10 +20,6 @@ extra-source-files:
   dbus-xml/org.freedesktop.UPower.xml
   dbus-xml/org.mpris.MediaPlayer2.Player.xml
   dbus-xml/org.mpris.MediaPlayer2.xml
-
-flag cryptocurrency
-    description: Enable crypto assets widget.
-    default: True
 
 library
   default-extensions:
@@ -76,7 +72,7 @@ library
                , rate-limit >= 1.1.1
                , regex-compat
                , safe >= 0.3 && < 1
-               , scotty >= 0.11.0 && < 0.12.0
+               , scotty >= 0.11 && < 0.21
                , split >= 0.1.4.2
                , status-notifier-item >= 0.3.1.0
                , stm

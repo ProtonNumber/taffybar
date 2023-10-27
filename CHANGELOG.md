@@ -1,5 +1,12 @@
 # Unreleased
 
+## Bug Fixes
+
+ * Gtk.widgetShowAll is run on the widget created by `cryptoPriceLabelWithIcon`,
+   so that it shows up by default.
+
+# 4.0.0
+
 ## Breaking Changes
 
  * `simpleTaffybar` now starts taffybar using `startTaffybar` instead of
@@ -57,6 +64,8 @@
  * Many types have `Default` instances.
 
  * Window titles are shown on hover.
+
+ * Allow sorting workspace window icons by _NET_CLIENT_LIST_STACKING.
 
 ## Changes
 
